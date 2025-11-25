@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Форма добавления задачи */
+.task-form {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.task-textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  min-height: 60px;
+  resize: vertical;
+}
+
+.add-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-btn:hover {
+  background: #45a049;
+}
+
+/* Список задач */
+.tasks-list {
+  text-align: left;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #fff;
+  border-left: 4px solid #4CAF50;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.task-item.completed {
+  border-left-color: #888;
+  opacity: 0.7;
+}
+
+.task-content h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.task-item.completed .task-content h3 {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-content p {
+  margin: 0 0 5px 0;
+  color: #666;
+}
+
+.task-content small {
+  color: #999;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.status-btn, .delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.status-btn {
+  background: #ffeb3b;
+}
+
+.status-btn.completed {
+  background: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background: #f44336;
+  color: white;
+}
+
+.status-btn:hover, .delete-btn:hover {
+  opacity: 0.8;
+}
