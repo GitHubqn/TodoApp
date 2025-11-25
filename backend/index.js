@@ -20,6 +20,7 @@ const pool = new Pool({
   port: process.env.DB_PORT,
 });
 
+
 // Проверка подключения к базе
 pool.connect((err, client, release) => {
   if (err) {
